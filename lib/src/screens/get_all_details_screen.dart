@@ -99,7 +99,7 @@ class _GetAllDetailsScreenState extends State<GetAllDetailsScreen> {
                 color: Colors.white,
               ),
               itemBuilder: (context, index) {
-                final comment = getAllDetailsModel!.data![index];
+                final getData = getAllDetailsModel!.data![index];
                 return Container(
                   decoration: BoxDecoration(
                     border: Border.all(
@@ -116,57 +116,57 @@ class _GetAllDetailsScreenState extends State<GetAllDetailsScreen> {
                       children: [
                         _rowWidget(
                           header: 'Id',
-                          title: comment.id.toString(),
+                          title: getData.id.toString(),
                         ),
                         verticalSpaceTiny,
                         _rowWidget(
                           header: 'Location Label',
-                          title: comment.locationLabel.toString(),
+                          title: getData.locationLabel.toString(),
                         ),
                         verticalSpaceTiny,
                         _rowWidget(
                           header: 'location Name',
-                          title: comment.locationName.toString(),
+                          title: getData.locationName.toString(),
                         ),
                         verticalSpaceTiny,
                         _rowWidget(
                           header: 'Longitude',
-                          title: comment.longitude.toString(),
+                          title: getData.longitude.toString(),
                         ),
                         verticalSpaceTiny,
                         _rowWidget(
                           header: 'Latitude',
-                          title: comment.latitude.toString(),
+                          title: getData.latitude.toString(),
                         ),
                         verticalSpaceTiny,
                         _rowWidget(
                           header: 'Created By',
-                          title: comment.createdBy.toString(),
+                          title: getData.createdBy.toString(),
                         ),
                         verticalSpaceTiny,
                         _rowWidget(
                           header: 'Created At',
-                          title: comment.createdAt.toString(),
+                          title: getData.createdAt.toString(),
                         ),
                         verticalSpaceTiny,
                         _rowWidget(
                           header: 'Updated By',
-                          title: comment.updatedBy.toString(),
+                          title: getData.updatedBy.toString(),
                         ),
                         verticalSpaceTiny,
                         _rowWidget(
                           header: 'Updated At',
-                          title: comment.updatedAt.toString(),
+                          title: getData.updatedAt.toString(),
                         ),
                         verticalSpaceTiny,
                         _rowWidget(
                           header: 'Is Active',
-                          title: comment.isActive.toString(),
+                          title: getData.isActive.toString(),
                         ),
                         verticalSpaceTiny,
                         _rowWidget(
                           header: 'Remark',
-                          title: comment.remark.toString(),
+                          title: getData.remark.toString(),
                         ),
                         verticalSpaceTiny,
                       ],
