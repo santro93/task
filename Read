@@ -1,0 +1,33 @@
+enum Flavor { production, dev, prodUAT, crUat }
+
+class AppConfig {
+  AppConfig(this.appName, this.baseUrl, this.flavor);
+  String appName = "";
+  String baseUrl = "";
+  Flavor flavor = Flavor.dev;
+
+  static AppConfig shared = AppConfig.create();
+
+  factory AppConfig.create({
+    String appName = "",
+    String baseUrl = "",
+    Flavor flavor = Flavor.dev,
+  }) {
+    return shared = AppConfig(appName, baseUrl, flavor);
+  }
+
+  String? flavorName(Flavor name) {
+    switch (name) {
+      case Flavor.production:
+        return "";
+      case Flavor.dev:
+        return "";
+      case Flavor.prodUAT:
+        return "";
+      case Flavor.crUat:
+        return "";
+      default:
+        return "";
+    }
+  }
+}
